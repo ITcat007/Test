@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Тест</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+        <select name="route" id="route" onchange="loadTimeList()">
+            <option value="AB">из A в B</option>
+            <option value="BA">из B в A</option>
+            <option value="ABA">из A в B и обратно в А</option>
+          </select>
+          <label for="time">Выберите время</label>
+          <select name="time" id="time" onchange="getBackArr()">
+            <option value="18:00(из A в B)">18:00(из A в B)</option>
+            <option value="18:30(из A в B)">18:30(из A в B)</option>
+            <option value="18:45(из A в B)">18:45(из A в B)</option>
+            <option value="19:00(из A в B)">19:00(из A в B)</option>
+            <option value="19:15(из A в B)">19:15(из A в B)</option>
+            <option value="21:00(из A в B)">21:00(из A в B)</option>
+            <option value="18:30(из B в A)">18:30(из B в A)</option>
+            <option value="18:45(из B в A)">18:45(из B в A)</option>
+            <option value="19:00(из B в A)">19:00(из B в A)</option>
+            <option value="19:15(из B в A)">19:15(из B в A)</option>
+            <option value="19:35(из B в A)">19:35(из B в A)</option>
+            <option value="21:50(из B в A)">21:50(из B в A)</option>
+            <option value="21:55(из B в A)">21:55(из B в A)</option>
+          </select>
+          <label for="time-back" id="time-back-label">Обратный рейс</label>
+          <select name="time-back" id="time-back"></select>
+          <label for="num">Количество билетов</label>
+          <input id="num" type="number" min="1" value="1" onchange="getCurrentInput()">
+          <button onclick="showResult()">Посчитать</button>
+          <div id="result"></div>
+        
+        <script src="js/app.js"></script>
+	</body>
+</html>
