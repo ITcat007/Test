@@ -1,0 +1,18 @@
+body{
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+thead, tbody, tfoot{
+  border-bottom: 2px solid #dfe1e6;
+}
+
+td, th{
+  text-align: center;
+  border: none;
+}
